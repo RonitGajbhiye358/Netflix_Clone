@@ -1,0 +1,321 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: black;
+    box-sizing: border-box;
+}
+*{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    padding: 0;
+    margin:0;
+}
+.logo{
+    width: 150px;
+    z-index: 10;
+    position: relative;
+}
+.btn{
+    position: relative;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 24px 32px;
+}
+.main{
+    background: url("assets/images/bg.jpg");
+    width: 100%;
+    height: 700px;
+    background-position: center center;
+    background-repeat: none;
+    background-size: max(100vh, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main .box{
+    background-color:black;
+    width:100%;
+    position: absolute;
+    height: 700px;
+    opacity: 0.69;
+    top: 0;
+}
+.btn-lang {
+    background-color: rgba(0,0,0,0.69);
+    align-items: center;
+    color: white;
+    margin-right: 16px;
+    padding: 6px 24px;
+    border: 1px solid grey;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 6px 24px;
+    border:1px solid red;
+    font-weight: 500;
+    font-size: 14px;
+}
+.btn-lang img{
+    margin-right:8px;
+    font-weight: 400;
+}
+
+button{
+    padding: 10px;
+    border-radius: 4px;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    z-index: inherit;
+    width: 100%;
+    height: 608px;
+    gap: 18px;
+}
+.hero > :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+}
+.hero > :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.hero > :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero-btn input {
+    padding:18px 232px 18px 12px;
+    color:white;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    background: rgba(22, 22, 22, 0.7);
+    font-size: 24;
+    font-weight: 500;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-red-sm{
+    background-color: red;
+    color:white;
+    border-radius: 0.25rem;
+    padding: 9px 14px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid red;
+}
+
+.separation{
+    width: 100%;
+    height: 10px;
+    background-color: #232323;
+    position: absolute;
+    z-index: 10;
+    top: 100;
+}
+
+.firstSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 76vw;
+    margin:auto;
+    padding: 4.5rem;
+}
+
+.sectext > :nth-child(1){
+    font-size:48px;
+    font-weight: 900;
+    margin-bottom:10px ;
+}
+.sectext > :nth-child(2){
+    font-size:24px;
+    font-weight: 400;
+}
+.firstSec{
+    position: relative;
+}
+.secimg img{
+    position: relative;
+    width: 555px;
+    z-index: -1;
+    
+}
+.secimg video{
+    position: absolute;
+    right: 154px;
+    width: 399px;
+    top: 159px;
+    z-index: -10;
+}
+.third{
+    position: relative;
+    display: flex;
+}
+.third img{
+    position: relative;
+}
+.third video{
+    position: absolute;
+    right: 184px;
+    width: 337px;
+    top: 107px;
+    object-fit: contain;
+    overflow: clip;
+}
+.faq{
+    text-align: center;
+    padding: 72px 0px;
+}
+.faq>:nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    padding: 16px;
+    line-height: normal;
+}
+.faq ul{
+    list-style-type: none;
+}
+.faq ul li{
+    width: 74vw;
+    border: 6px solid black;
+    background-color: #2d2d2d;
+    margin: auto;
+    padding: 1.5rem;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: space-between;
+}
+ul li:hover{
+    background-color:#414141;
+}
+.faq > :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 20px 0px 10px 0px;
+    margin-top: 2.85rem;
+}
+.smalltext{
+    padding-bottom: 1.25rem;
+    
+}
+.footer{
+    width: 76vw;
+    margin: 4.5rem auto;
+    height: auto;
+}
+.links{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.25rem;
+}
+a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+#CP{
+    padding-top: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14;
+    font-weight: 400;
+}
+.downl {
+    border: 1px solid white;
+}
+.Downl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 298px;
+    height: 84px;
+    position: absolute;
+    left: 183px;
+    top: 358px;
+    background-color: black;
+    justify-content: space-between;
+    z-index: -1;
+    border: 1.6px solid grey;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.Downl .downl-img {
+    background-size: contain;
+    max-width: 74%;
+    max-height: 100%;
+    /* Add other styles like centering the image if needed */
+}
+.downl-text> :nth-child(1){
+    margin: 0px 29px 0px 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.downl-text> :nth-child(2){
+    color: blue;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1300px){
+    nav{
+        max-width: 90vw;
+    }
+    .hero-btn{
+        flex-wrap: wrap;
+    }
+    .hero{
+        justify-content: center;
+        text-align: center;
+    }
+    .firstSec{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}   
+@media screen and  (max-width:720px) {
+    .firstSec{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .secimg video{
+        right: 244px;
+        width: 401px;
+        top: 314px;
+    }
+    .downl{
+        left: 236px;
+    }
+}
+

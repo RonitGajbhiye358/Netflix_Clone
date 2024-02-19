@@ -20,6 +20,7 @@ body{
 .btn{
     position: relative;
     z-index: 10;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -37,7 +38,6 @@ nav{
     height: 700px;
     background-position: center center;
     background-repeat: none;
-    background-size: max(100vh, 100vw);
     background-repeat: no-repeat;
     position: relative;
 }
@@ -56,6 +56,7 @@ nav{
     margin-right: 16px;
     padding: 6px 24px;
     border: 1px solid grey;
+    cursor: pointer;
 }
 .btn-red{
     background-color: red;
@@ -64,6 +65,8 @@ nav{
     border:1px solid red;
     font-weight: 500;
     font-size: 14px;
+    cursor: pointer;
+
 }
 .btn-lang img{
     margin-right:8px;
@@ -207,6 +210,7 @@ button{
     vertical-align: baseline;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 ul li:hover{
     background-color:#414141;
@@ -240,6 +244,7 @@ a{
     font-weight: 400;
     line-height: normal;
     color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
     
 }
 #CP{
@@ -286,7 +291,7 @@ a{
     font-weight: 400;
 }
 
-@media screen and (max-width:1300px){
+@media screen and (max-width:1000px){
     nav{
         max-width: 90vw;
     }
@@ -302,20 +307,61 @@ a{
         text-align: center;
         justify-content: center;
     }
-}   
-@media screen and  (max-width:720px) {
-    .firstSec{
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
+    .hero> :nth-child(1) {
+        font-size: 32px;
     }
-    .secimg video{
-        right: 244px;
-        width: 401px;
-        top: 314px;
-    }
-    .downl{
-        left: 236px;
-    }
-}
 
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .secimg img {
+        width: 350px;
+    }
+
+    .secimg video {
+        right: 324px;
+        top: 282px;
+        width: 254px;
+    }
+    .faq>:nth-child(1) {
+        text-align: center;
+        font-size: 32px;
+    }
+    .links{
+        grid-template-columns: 1fr 1fr;
+    }
+    .Downl{
+        width: 224px;
+        height: 84px;
+        position: absolute;
+        left: 218px;
+        top: 262px;
+    }
+    .secimg{
+        margin-bottom: 32px;
+    }
+    .sectext > :nth-child(1){
+        font-size:32px;
+        font-weight: 700;
+        margin-bottom:10px ;
+    }
+    .sectext > :nth-child(2){
+        font-size:18px;
+        font-weight: 400;
+    }
+}   
+
+
+@media screen and (max-width: 768px) {
+    /* Adjust video width, height, and position for smaller screens */
+    .secimg video {
+      width: 300px;
+      height: 200px;
+      top: 100px;
+      left: 50px;
+    }
+  }

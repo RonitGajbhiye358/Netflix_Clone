@@ -1,7 +1,7 @@
  * Netflix Clone Project *
 
- * visit
-   `` https://ronitgajbhiye358.github.io/Netflix_Clone/ ``
+ * visit website
+    https://ronitgajbhiye358.github.io/Netflix_Clone/ 
 
 * Watch Demo Video
 link to the google drive -
